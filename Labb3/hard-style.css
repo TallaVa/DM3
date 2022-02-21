@@ -1,0 +1,66 @@
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #7887ca;
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #888c9f;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8f161d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #8f161d;
+}
+
+#body {
+  color: white;
+  font-size: 10pt;
+  background-image: url(/Labb3/bilder/bg.gif);
+}
+
+p {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #f9f5e4;
+  font-family: Arial black, sans-serif;
+  font-size: 2.2em;
+}
+h2 {
+  color: #f9f5e4;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+h3 {
+  color: #f9f5e4;
+  font-family: consolas, Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.kursiv {
+  font-style: oblique;
+}
+
+.kant {
+  border: 1px solid white;
+}
+
+#content {
+  width: 600px;
+  background-color: black;
+  padding: 20px;
+}
