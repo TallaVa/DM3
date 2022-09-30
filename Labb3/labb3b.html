@@ -34,39 +34,50 @@
       }
 
       /* Här skriver du din kod för utskrift */
+      @media print {
+        #page-content {
+          padding-left: 80px;
+        }
 
-      #page-content {
-        padding-left: 80px;
-        text
-      }
+        body {
+          background-color: white;
+          font-family: "Times New Roman", Times, serif !important;
+          color: black;
+          display: table;
+          margin: auto;
+          font-size: inherit;
+        }
 
-      body {
-        background-color: white;
-        font-family: "Times New Roman", Times, serif !important;
-        color: black;
-        display: table;
-        margin: auto;
-        padding-left: 80px;
-      }
+        #bilder {
+          display: none;
+        }
 
-      img {
-        display: none;
-      }
+        h1 {
+          display: none;
+        }
 
-      h1 {
-        display: none;
-      }
-
-      ul {
-        list-style: none;
-        padding-left: 0px;
+        ul {
+          list-style: none;
+          padding-left: 0px;
+          width: 400px;
+        }
+        p {
+          width: 400px;
+        }
+        .clearfix {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
     <!-- Hela sidan ligger i div page-content -->
     <div id="page-content">
-      <img src="bilder/kott-bullar.jpg" alt="köttbullar av kyckling" />
+      <img
+        id="bilder"
+        src="bilder/kott-bullar.jpg"
+        alt="köttbullar av kyckling"
+      />
       <h1>Dags att börja förbereda inför julen!</h1>
       <h2>Julköttbullar av kyckling</h2>
       <ul>
@@ -93,8 +104,7 @@
     </div>
 
     <!-- W3C logos for valid HTML5 and CSS3 -->
-    <div class="clearfix"></div>
-    <div>
+    <div class="clearfix">
       <p>
         <a href="http://validator.w3.org/check?uri=referer"
           ><img
